@@ -1,0 +1,27 @@
+{
+  "name": "tailwindwrollup",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "author": "jogiter",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo 'todo'"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "^10.2.1",
+    "dotenv": "^8.2.0",
+    "postcss": "^8.2.4",
+    "postcss-import": "^14.0.0",
+    "rollup": "^2.36.1",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-vue": "^6.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.12"
+  }
+}
