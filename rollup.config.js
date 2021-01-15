@@ -1,6 +1,7 @@
 import pkg from './package.json'
 import postcss from 'rollup-plugin-postcss'
 import vue from 'rollup-plugin-vue';
+import ts from 'rollup-plugin-typescript2';
 require('dotenv').config();
 
 function external(id) {
@@ -12,13 +13,14 @@ function external(id) {
 }
 
 export default {
-  input: './src/index.js',
+  input: './src/index.ts',
   output: {
     format: 'es',
     file: pkg.main,
   },
   external,
   plugins: [
+    ts(),
     vue(),
     postcss({
       plugins: [
