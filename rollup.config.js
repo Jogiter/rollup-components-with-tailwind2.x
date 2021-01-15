@@ -21,11 +21,12 @@ export default {
   external,
   plugins: [
     ts(),
-    vue(),
+    vue({ css: false }),
     postcss({
       plugins: [
         require('postcss-import'),
         require('tailwindcss'),
+        require('postcss-nested'),
         require('autoprefixer'),
       ],
     }),
