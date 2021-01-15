@@ -2044,6 +2044,13 @@ postcss-nested@^5.0.1:
   dependencies:
     postcss-selector-parser "^6.0.4"
 
+postcss-nested@^5.0.3:
+  version "5.0.3"
+  resolved "https://npm-frontend-infra.deepexi.com/postcss-nested/-/postcss-nested-5.0.3.tgz#2f46d77a06fc98d9c22344fd097396f5431386db"
+  integrity sha1-L0bXegb8mNnCI0T9CXOW9UMThts=
+  dependencies:
+    postcss-selector-parser "^6.0.4"
+
 postcss-normalize-charset@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npm.taobao.org/postcss-normalize-charset/download/postcss-normalize-charset-4.0.1.tgz?cache=0&sync_timestamp=1610386787583&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-normalize-charset%2Fdownload%2Fpostcss-normalize-charset-4.0.1.tgz#8b35add3aee83a136b0471e0d59be58a50285dd4"

@@ -1,9 +1,11 @@
 module.exports = {
   purge: {
     enabled: process.env.NODE_ENV === 'production',
-    content: [
-      './src/**/*.{vue,ts,js}',
-    ],
+    content: ['./src/**/*.{vue,ts,js}'],
+    // 为什么会丢失 xl:block 等 css 的原因：https://purgecss.com/extractors.html#default-extractor
+    // 默认提取器将文件的每个单词视为选择器。默认值见：https://github.com/FullHuman/purgecss/blob/master/packages/purgecss/src/options.ts#L6-L7
+    // 默认提取器有一些限制： 不考虑特殊字符，例如'@'，'：'，'/'
+    defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {

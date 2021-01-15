@@ -19,11 +19,12 @@ export default {
   },
   external,
   plugins: [
-    vue(),
+    vue({ css: false }),
     postcss({
       plugins: [
         require('postcss-import'),
         require('tailwindcss'),
+        require('postcss-nested'),
         require('autoprefixer'),
       ],
     }),
